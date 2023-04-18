@@ -3,6 +3,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -51,6 +52,13 @@ public class ArabamAppTest {
 
     @Test
     public void arabamTest(){
-        driver.getDeviceTime();
+
+       // driver.findElement(By.xpath("//*[@text=\"İlan ver\"]")).click();
+
+        driver.findElement(By.xpath("//*[@text=\"Ana Sayfa\"]")).click();
+
+       // driver.findElement(By.xpath("//*[@text=\"Arabam kaç para?\"]")).click();
+
+
     }
 }

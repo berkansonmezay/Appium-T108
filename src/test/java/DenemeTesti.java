@@ -59,9 +59,10 @@ public class DenemeTesti {
     }
 
 
-
-
-
+    @Test
+    public void toplama() {
+        driver.activateApp("com.google.androd.calculator");
+    }
 
 
 
