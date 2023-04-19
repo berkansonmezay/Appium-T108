@@ -1,3 +1,5 @@
+package tests;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -26,7 +28,7 @@ public class ApkYukleme {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platformVersion);
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, automationName);
-        capabilities.setCapability(MobileCapabilityType.APP, "C:\\Java Projects\\Appium_T-108\\Apps\\Apk Bilgisi_2.3.4_apkcombo.com.apk");
+        capabilities.setCapability(MobileCapabilityType.APP, "C:\\Java Projects\\Appium_T_108\\Apps\\Kiwi.com - Book Cheap Flights.apk");
 
         driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
