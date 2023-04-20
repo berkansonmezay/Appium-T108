@@ -30,21 +30,27 @@ public class KiwiTest {
 
     KiwiPage page=new KiwiPage();
     @Test
-    public void kiwiTest(){
+    public void kiwiTest() throws InterruptedException {
         // uygulamanin yuklendigi dogrulanir
         Assert.assertTrue(driver.isAppInstalled("com.skypicker.main"),"uygulama yuklenemedi");
+
         // uygulamanin basariyla acildigi dogrulanir
        String yaziTextActual= page.asAGuest.getText();
        String yaziTextExpected="Continue as a guest";
        Assert.assertEquals(yaziTextActual,yaziTextExpected,"uygulama basarili bir sekilde baslatilamadi");
+
         // misafir olarak devam et e tiklanir
         page.asAGuest.click();
+
         // ardinda gelecek olan 3 adimada yesil butona basilarak devam edilir
-        page.ucButtonTiklama(0,3,538,1686,500);
+        page.ucButtonTiklama(0,3,522,2030,500);
+        Thread.sleep(200);
 
         // Trip type,one way olarak secilir
           page.returnButton.click();
+          Thread.sleep(1000);
           page.oneWay.click();
+
         // kalkis ulkesi secenegine tiklanir ve default olan ulke kaldirilir
         page.kalkisButonu.click();
         page.defaultUlkeSILME.click();
