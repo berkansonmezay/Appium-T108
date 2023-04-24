@@ -28,7 +28,7 @@ public class ApkYukleme {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platformVersion);
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, automationName);
-        capabilities.setCapability(MobileCapabilityType.APP, "C:\\Java Projects\\Appium_T_108\\Apps\\Kiwi.com - Book Cheap Flights.apk");
+        capabilities.setCapability(MobileCapabilityType.APP, "C:\\Java Projects\\Appium_T_108\\Apps\\AllCurrencyConverter_2023-03-11.apk");
 
         driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

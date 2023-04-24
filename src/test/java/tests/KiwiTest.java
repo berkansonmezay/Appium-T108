@@ -44,7 +44,6 @@ public class KiwiTest {
 
         // ardinda gelecek olan 3 adimada yesil butona basilarak devam edilir
         page.ucButtonTiklama(0,3,522,2030,500);
-        Thread.sleep(200);
 
         // Trip type,one way olarak secilir
           page.returnButton.click();

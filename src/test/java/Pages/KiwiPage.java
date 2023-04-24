@@ -41,10 +41,10 @@ public class KiwiPage {
     public static void ucButtonTiklama(int baslangic,int bitis,int xCoordinat,int yCoordinat,int wait){
         TouchAction action=new TouchAction<>(Driver.getAndroidDriver());
         for (int i=baslangic; i<bitis; i++){
-            action.press(PointOption.point(xCoordinat,yCoordinat)).
-                    waitAction(WaitOptions.waitOptions(Duration.ofMillis(wait)))
-                    .release().
-                    perform();
+            action.press(PointOption.point(xCoordinat,yCoordinat))
+                    .waitAction(WaitOptions.waitOptions(Duration.ofMillis(wait)))
+                    .release()
+                    .perform();
         }
     }
 
