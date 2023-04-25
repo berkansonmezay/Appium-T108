@@ -33,8 +33,6 @@ public class Driver {
             caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, OTOMASYON_ISMI);
             caps.setCapability("appPackage","com.smartwho.SmartAllCurrencyConverter");
             caps.setCapability("appActivity","com.smartwho.SmartAllCurrencyConverter.CurrencyConverter");
-            //main activity veyya home page activity gibi bir deger olmalı bunlar yoksa genelde google yazmayan uygulama ismini yazan denenmeli.
-
             caps.setCapability(MobileCapabilityType.NO_RESET,false); // true uygulama sifirlanmiyor onceki adimlari muhafaza ediyor
             //false ise her test baslangicinda sifirliyor
 
