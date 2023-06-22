@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 public class ApkYukleme {
     AndroidDriver<AndroidElement> driver;   // AndroidElement yerine MobileElement de kullanılabilir
     AppiumDriver<MobileElement> appiumDriver;   // hem android te hem ios ta calisir.
-    final String deviceName = "PIXEL";
+    final String deviceName = "PIXEL2";
     final String platformName = "Android";
     final String platformVersion = "10.0";
     final String automationName = "UiAutomator2";
@@ -28,7 +28,7 @@ public class ApkYukleme {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platformVersion);
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, automationName);
-        capabilities.setCapability(MobileCapabilityType.APP, "C:\\Java Projects\\Appium_T_108\\Apps\\Aile Bütçem_1.07_apkcombo.com.apk");
+        capabilities.setCapability(MobileCapabilityType.APP, "C:\\Java Projects\\Appium_T_108\\Apps\\arabam.com_4.8.0_Apkpure.apk");
 
         driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
